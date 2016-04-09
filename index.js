@@ -34,6 +34,15 @@ app.get('/', function(req, res) {
 	res.render('pages/index');
 });
 
+io.sockets.on('connection', function(socket) {
+  /*
+  socket.on('test', function(data) {
+    var data = [];
+    io.emit('testsend', data);
+  }
+   */
+});
+
 http.listen(app.get('port'), function() {
   console.log('Node app is running on port ', app.get('port'));
 });
