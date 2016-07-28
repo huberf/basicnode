@@ -1,5 +1,5 @@
 //Getting all dependencies
-var express = require('express.io');
+var express = require('express');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var app = express();
